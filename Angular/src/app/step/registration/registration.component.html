@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Step registration form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+</head>
+
+
+<body>
+    <div class="main-block">
+        <div class="left-part">
+          <h1>SIGN IN</h1>
+          <div class="icon">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="formcontainer">
+  
+          <div class="container">
+          <label for="uname"><strong>Username</strong></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+         
+          <label for="psw"><strong>Password</strong></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          </div>
+  
+          <button type="submit"><strong>SIGN IN</strong></button>
+  
+          <div class="container" >
+          <label style="padding-left: 1px">
+          <input type="checkbox"  checked="checked" name="remember"> Remember me
+          </label>
+          <span class="psw"><a href="#">Forgot password?</a></span>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <form action="/"> -->
+        <form #userForm = "ngForm">
+        <div class="title">
+          <i class="fas fa-pencil-alt"></i> 
+          <h2>Register here</h2>
+        </div>
+        <div class="info">
+          <table>
+            <tr>
+              <td><label> Name</label></td>
+              <td><input type="text" name="Full Name" required></td>
+            </tr>
+     
+             <tr>
+              <td><label>User Name</label></td>
+              <td><input type="text" name="User Name" required></td>
+            </tr>
+             <tr>
+              <td><label>Date of Birth</label></td>
+              <td><input type="date" id="dob"></td>
+            </tr>
+             <tr>
+              <td><label>Password</label></td>
+              <td><input type="password" name="Enter Password" required></td>
+            </tr>
+            <tr>
+              <td><label>Confirm Password</label></td>
+              <td><input type="password" name="Confirm your Password" required></td>
+            </tr>
+            <tr>
+            <td><label>Contact:</label></td>
+              <td><input type="tel" name="phone" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+        
+          <td><input type="checkbox" name="checkbox"><span>     I agree to the <a href="">Privacy Policy of MWCD</a></span>
+          </td>
+      </tr>
+      <tr>
+        <td><button type="submit" href="">Submit</button></td>
+      </tr>
+      
+    </table>
+</div>
+</form>
+
+
+
+      
+
+
+</body>
+    </html>
